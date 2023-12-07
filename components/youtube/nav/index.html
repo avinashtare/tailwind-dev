@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Youtube Nav Bar</title>
+</head>
+
+<body class="w-screen h-screen relative bg-[#232323]">
+    <nav class="absolute min-w-full h-14 bg-[#0f0f0f] flex items-center justify-between px-7">
+        <div class="relative border-white border-solid  flex items-center">
+            <div class="flex items-center mr-4">
+                <ion-icon class="text-white text-3xl" name="menu-outline"></ion-icon>
+            </div>
+            <div>
+                <img class="w-24" src="youtube.png" alt="youtube logo">
+            </div>
+            <span class="absolute -top-[5px] -right-[15px] text-gray-400 text-sm">In</span>
+        </div>
+
+        <div class="flex text-white border-1 border-red-600 h-[70%]">
+            <div class="flex mr-6 h-full">
+                <input type="text" placeholder="Search"
+                    class=" bg-[#121212] border-[1px] rounded-2xl rounded-r-none border-[#303030] outline-none h-full w-[450px] px-5 py-2">
+                <button
+                    class="outline-none border-[#303030] border-[1px] px-5 py-2 rounded-2xl rounded-l-none bg-[#303030]"><ion-icon
+                        class="font-thin text-xl" name="search-outline"></ion-icon></button>
+            </div>
+            <div class="bg-[#303030] py-2 px-2 rounded-full cursor-pointer hover:bg-[#404040] ">
+                <ion-icon class="text-2xl" name="mic-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="flex h-[70%] text-white space-x-3">
+            <div class="bg-[#303030] py-2 px-2 rounded-full cursor-pointer hover:bg-[#404040] ">
+                <ion-icon class="text-2xl" name="videocam-outline"></ion-icon>
+            </div>
+            <div class="bg-[#303030] py-2 px-2 rounded-full cursor-pointer hover:bg-[#404040] ">
+                <ion-icon class="text-2xl" name="notifications-outline"></ion-icon>
+            </div>
+            <div class="bg-[#303030] h-full px-1 py-1 rounded-full cursor-pointer hover:bg-[#404040] ">
+                <ion-icon class="text-3xl " name="person-outline"></ion-icon>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
